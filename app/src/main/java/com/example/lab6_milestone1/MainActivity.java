@@ -27,6 +27,7 @@ public class MainActivity extends FragmentActivity {
     private FusedLocationProviderClient mFusedLocationProviderClient;
     private static final int PERMISSIONS_REQUEST_ACCESS_FINE_LOCATION = 12;
 
+    // git comment
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -40,7 +41,6 @@ public class MainActivity extends FragmentActivity {
                     .title("Destination"));
             displayMyLocation();
         });
-
         mFusedLocationProviderClient = LocationServices.getFusedLocationProviderClient(this);
     }
 
